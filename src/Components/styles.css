@@ -13,7 +13,7 @@ h1 {
 }
 
 .header-container > p {
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: bold;
   color: white;
 }
@@ -37,8 +37,8 @@ h1 {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 0.6rem;
-  row-gap: 1.3rem;
+  column-gap: 0.3rem;
+  row-gap: 0.6rem;
   justify-content: center;
 }
 
@@ -56,8 +56,8 @@ h1 {
 }
 
 img {
-  max-width: 5.8rem;
-  height: 6.5rem;
+  max-width: 5rem;
+  height: 5rem;
 }
 
 @media (min-width: 719px) {

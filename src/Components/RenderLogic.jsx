@@ -19,7 +19,7 @@ function RenderLogic() {
       //1. Fetch the batch of Pokemon
       try {
         const response = await fetch(
-          "https://pokeapi.co/api/v2/pokemon?limit=18",
+          "https://pokeapi.co/api/v2/pokemon?limit=20",
         );
         const data = await response.json();
 
@@ -79,9 +79,10 @@ function RenderLogic() {
       <div className="header-section">
         <div className="header-container">
           <h1>Blazing Jas Memory Game</h1>
+          <p>Game Instructions:</p>
           <p>
-            Get Points by clicking an image, but the game resets when you click
-            on the same image twice
+            Get Points by clicking an image, the game resets when you click on
+            the same image twice
           </p>
         </div>
         <div className="score-container">

@@ -7,21 +7,39 @@ body {
   background-color: rgb(6, 50, 15);
 }
 
-h1,
-p {
+h1 {
+  color: rgb(197, 155, 155);
+  font-size: 2rem;
+}
+
+.header-container > p {
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: white;
+}
+
+.score-container {
+  margin-top: 0.8rem;
+}
+
+.score-container > p {
+  font-size: 1rem;
+  font-weight: bold;
   color: white;
 }
 
 .header-section {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 5.8rem);
+  gap: 0.5rem;
+  row-gap: 1rem;
+  justify-content: center;
 }
 
 .memory-card {
@@ -30,12 +48,58 @@ p {
 
 .memory-card > p {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   background-color: black;
+  color: white;
 }
 
 img {
-  max-width: 13.75rem;
-  height: 13.75rem;
+  max-width: 5.8rem;
+  height: 6.8rem;
+}
+
+@media (min-width: 719px) {
+  h1 {
+    color: rgb(197, 155, 155);
+    font-size: 2.5rem;
+  }
+
+  .header-container > p,
+  .score-container > p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.625rem;
+    gap: 0.3rem;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    gap: 0.7rem;
+    justify-content: center;
+  }
+
+  .memory-card {
+    background-color: rgb(12, 139, 67);
+  }
+
+  .memory-card > p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+  }
+
+  img {
+    max-width: 10rem;
+    height: 9rem;
+  }
 }

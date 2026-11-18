@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+body {
+  padding: 10px;
+  background-color: rgb(6, 50, 15);
+}
+
+h1,
+p {
+  color: white;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.memory-card {
+  background-color: rgb(12, 139, 67);
+}
+
+.memory-card > p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: black;
+}
+
+img {
+  max-width: 13.75rem;
+  height: 13.75rem;
+}

@@ -86,8 +86,8 @@ function RenderLogic() {
           </p>
         </div>
         <div className="score-container">
-          <p>Score:{clickedImages.length}</p>
-          <p>Best Score:{bestScore}</p>
+          <p>Score: {clickedImages.length}</p>
+          <p>Best Score: {bestScore}</p>
         </div>
       </div>
       <div className="card-grid">

@@ -20,10 +20,12 @@ h1 {
 
 .score-container {
   margin-top: 0.8rem;
+  background-color: black;
+  padding: 0.2rem;
 }
 
 .score-container > p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: white;
 }
@@ -38,7 +40,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 0.3rem;
-  row-gap: 0.6rem;
+  row-gap: 0.3rem;
   justify-content: center;
 }
 
